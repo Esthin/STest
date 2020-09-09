@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  VC.swift
 //  STest
 //
 //  Created by Dmitry Kosyakov on 09.09.2020.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
     }
-
-
 }
-

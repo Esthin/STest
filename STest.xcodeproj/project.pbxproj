@@ -8,24 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		5B14FE512508EEFF005BFD73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE502508EEFF005BFD73 /* AppDelegate.swift */; };
-		5B14FE532508EEFF005BFD73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE522508EEFF005BFD73 /* SceneDelegate.swift */; };
-		5B14FE552508EEFF005BFD73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE542508EEFF005BFD73 /* ViewController.swift */; };
-		5B14FE582508EEFF005BFD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B14FE562508EEFF005BFD73 /* Main.storyboard */; };
 		5B14FE5B2508EEFF005BFD73 /* STest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE592508EEFF005BFD73 /* STest.xcdatamodeld */; };
 		5B14FE5D2508EF02005BFD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B14FE5C2508EF02005BFD73 /* Assets.xcassets */; };
 		5B14FE602508EF02005BFD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B14FE5E2508EF02005BFD73 /* LaunchScreen.storyboard */; };
+		5B14FE6C2508EF80005BFD73 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE6B2508EF80005BFD73 /* NetworkAPI.swift */; };
+		5B14FE6E2508EFC0005BFD73 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE6D2508EFC0005BFD73 /* BaseRequest.swift */; };
+		5B14FE702508F05F005BFD73 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE6F2508F05F005BFD73 /* NetworkError.swift */; };
+		5B14FE742508FF03005BFD73 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE732508FF03005BFD73 /* AppRouter.swift */; };
+		5B14FE7625090192005BFD73 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7525090192005BFD73 /* VC.swift */; };
+		5B14FE8325090B9A005BFD73 /* SearchAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7825090B9A005BFD73 /* SearchAssembler.swift */; };
+		5B14FE8425090B9A005BFD73 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7925090B9A005BFD73 /* SearchInteractorOutput.swift */; };
+		5B14FE8525090B9A005BFD73 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7A25090B9A005BFD73 /* SearchPresenter.swift */; };
+		5B14FE8625090B9A005BFD73 /* SearchRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7B25090B9A005BFD73 /* SearchRouting.swift */; };
+		5B14FE8725090B9A005BFD73 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7C25090B9A005BFD73 /* SearchRouter.swift */; };
+		5B14FE8825090B9A005BFD73 /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7D25090B9A005BFD73 /* SearchInteractorInput.swift */; };
+		5B14FE8925090B9A005BFD73 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7E25090B9A005BFD73 /* SearchViewController.swift */; };
+		5B14FE8A25090B9A005BFD73 /* SearchPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7F25090B9A005BFD73 /* SearchPresenterInput.swift */; };
+		5B14FE8B25090B9A005BFD73 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE8025090B9A005BFD73 /* SearchInteractor.swift */; };
+		5B14FE8C25090B9A005BFD73 /* SearchPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE8125090B9A005BFD73 /* SearchPresenterOutput.swift */; };
+		5B14FE8D25090B9A005BFD73 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B14FE8225090B9A005BFD73 /* SearchViewController.xib */; };
+		5B14FE9525090C09005BFD73 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE9425090C09005BFD73 /* BaseRouter.swift */; };
+		5B14FE9725090C3F005BFD73 /* BaseRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE9625090C3F005BFD73 /* BaseRouting.swift */; };
+		5B14FE9E25090CCA005BFD73 /* BasePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE9D25090CCA005BFD73 /* BasePresenting.swift */; };
+		5B14FEA525090DEC005BFD73 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEA425090DEC005BFD73 /* TranslateService.swift */; };
+		5B14FEA725090DF7005BFD73 /* TranslateServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEA625090DF7005BFD73 /* TranslateServiceProtocol.swift */; };
+		5B14FEA925090E2A005BFD73 /* TranslateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEA825090E2A005BFD73 /* TranslateRequest.swift */; };
+		5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */; };
+		5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E88FE25092F70005BB2CE /* LoadingView.swift */; };
+		5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E890025093108005BB2CE /* BaseViewController.swift */; };
+		5BC6D0BF250923D700EB20A6 /* LanguageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6D0BE250923D600EB20A6 /* LanguageList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B14FE4D2508EEFF005BFD73 /* STest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B14FE502508EEFF005BFD73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B14FE522508EEFF005BFD73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B14FE542508EEFF005BFD73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B14FE572508EEFF005BFD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B14FE5A2508EEFF005BFD73 /* STest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = STest.xcdatamodel; sourceTree = "<group>"; };
 		5B14FE5C2508EF02005BFD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B14FE5F2508EF02005BFD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B14FE612508EF02005BFD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B14FE6B2508EF80005BFD73 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		5B14FE6D2508EFC0005BFD73 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		5B14FE6F2508F05F005BFD73 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5B14FE732508FF03005BFD73 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5B14FE7525090192005BFD73 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		5B14FE7825090B9A005BFD73 /* SearchAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembler.swift; sourceTree = "<group>"; };
+		5B14FE7925090B9A005BFD73 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
+		5B14FE7A25090B9A005BFD73 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		5B14FE7B25090B9A005BFD73 /* SearchRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouting.swift; sourceTree = "<group>"; };
+		5B14FE7C25090B9A005BFD73 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		5B14FE7D25090B9A005BFD73 /* SearchInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorInput.swift; sourceTree = "<group>"; };
+		5B14FE7E25090B9A005BFD73 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5B14FE7F25090B9A005BFD73 /* SearchPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterInput.swift; sourceTree = "<group>"; };
+		5B14FE8025090B9A005BFD73 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		5B14FE8125090B9A005BFD73 /* SearchPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterOutput.swift; sourceTree = "<group>"; };
+		5B14FE8225090B9A005BFD73 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		5B14FE9425090C09005BFD73 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		5B14FE9625090C3F005BFD73 /* BaseRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouting.swift; sourceTree = "<group>"; };
+		5B14FE9D25090CCA005BFD73 /* BasePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenting.swift; sourceTree = "<group>"; };
+		5B14FEA425090DEC005BFD73 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		5B14FEA625090DF7005BFD73 /* TranslateServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceProtocol.swift; sourceTree = "<group>"; };
+		5B14FEA825090E2A005BFD73 /* TranslateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequest.swift; sourceTree = "<group>"; };
+		5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponse.swift; sourceTree = "<group>"; };
+		5B7E88FE25092F70005BB2CE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5B7E890025093108005BB2CE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5BC6D0BE250923D600EB20A6 /* LanguageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +104,199 @@
 		5B14FE4F2508EEFF005BFD73 /* STest */ = {
 			isa = PBXGroup;
 			children = (
+				5BC6D0C025092ED700EB20A6 /* UI */,
+				5B14FE672508EF1A005BFD73 /* Modules */,
+				5B14FE682508EF22005BFD73 /* Core */,
+				5B14FE692508EF27005BFD73 /* Extensions */,
+				5B14FE9F25090D68005BFD73 /* Services */,
 				5B14FE502508EEFF005BFD73 /* AppDelegate.swift */,
-				5B14FE522508EEFF005BFD73 /* SceneDelegate.swift */,
-				5B14FE542508EEFF005BFD73 /* ViewController.swift */,
-				5B14FE562508EEFF005BFD73 /* Main.storyboard */,
+				5B14FE732508FF03005BFD73 /* AppRouter.swift */,
+				5B14FE7525090192005BFD73 /* VC.swift */,
 				5B14FE5C2508EF02005BFD73 /* Assets.xcassets */,
 				5B14FE5E2508EF02005BFD73 /* LaunchScreen.storyboard */,
 				5B14FE612508EF02005BFD73 /* Info.plist */,
 				5B14FE592508EEFF005BFD73 /* STest.xcdatamodeld */,
 			);
 			path = STest;
+			sourceTree = "<group>";
+		};
+		5B14FE672508EF1A005BFD73 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6D0A125091B8500EB20A6 /* LanguageSelector */,
+				5B14FE7725090B86005BFD73 /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5B14FE682508EF22005BFD73 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE9325090BF1005BFD73 /* Base */,
+				5B14FE6A2508EF5B005BFD73 /* Network */,
+				5BC6D0BE250923D600EB20A6 /* LanguageList.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B14FE692508EF27005BFD73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B14FE6A2508EF5B005BFD73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE6B2508EF80005BFD73 /* NetworkAPI.swift */,
+				5B14FE6F2508F05F005BFD73 /* NetworkError.swift */,
+				5B14FE6D2508EFC0005BFD73 /* BaseRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B14FE7725090B86005BFD73 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE8E25090BA8005BFD73 /* Assembler */,
+				5B14FE9225090BE7005BFD73 /* Router */,
+				5B14FE9125090BD8005BFD73 /* Interactor */,
+				5B14FE9025090BCD005BFD73 /* Presenter */,
+				5B14FE8F25090BB6005BFD73 /* ViewController */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5B14FE8E25090BA8005BFD73 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE7825090B9A005BFD73 /* SearchAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		5B14FE8F25090BB6005BFD73 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE7E25090B9A005BFD73 /* SearchViewController.swift */,
+				5B14FE8225090B9A005BFD73 /* SearchViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5B14FE9025090BCD005BFD73 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE7A25090B9A005BFD73 /* SearchPresenter.swift */,
+				5B14FE7F25090B9A005BFD73 /* SearchPresenterInput.swift */,
+				5B14FE8125090B9A005BFD73 /* SearchPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5B14FE9125090BD8005BFD73 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE8025090B9A005BFD73 /* SearchInteractor.swift */,
+				5B14FE7D25090B9A005BFD73 /* SearchInteractorInput.swift */,
+				5B14FE7925090B9A005BFD73 /* SearchInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5B14FE9225090BE7005BFD73 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE7B25090B9A005BFD73 /* SearchRouting.swift */,
+				5B14FE7C25090B9A005BFD73 /* SearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B14FE9325090BF1005BFD73 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE9C25090CC0005BFD73 /* Presenting */,
+				5B14FE9825090C5D005BFD73 /* Router */,
+				5B7E890025093108005BB2CE /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5B14FE9825090C5D005BFD73 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE9625090C3F005BFD73 /* BaseRouting.swift */,
+				5B14FE9425090C09005BFD73 /* BaseRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B14FE9C25090CC0005BFD73 /* Presenting */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FE9D25090CCA005BFD73 /* BasePresenting.swift */,
+			);
+			path = Presenting;
+			sourceTree = "<group>";
+		};
+		5B14FE9F25090D68005BFD73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FEA025090DBB005BFD73 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B14FEA025090DBB005BFD73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FEA125090DC1005BFD73 /* Translate */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B14FEA125090DC1005BFD73 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FEA325090DD4005BFD73 /* Responses */,
+				5B14FEA225090DCC005BFD73 /* Requests */,
+				5B14FEA425090DEC005BFD73 /* TranslateService.swift */,
+				5B14FEA625090DF7005BFD73 /* TranslateServiceProtocol.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		5B14FEA225090DCC005BFD73 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FEA825090E2A005BFD73 /* TranslateRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5B14FEA325090DD4005BFD73 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		5BC6D0A125091B8500EB20A6 /* LanguageSelector */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LanguageSelector;
+			sourceTree = "<group>";
+		};
+		5BC6D0C025092ED700EB20A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E88FE25092F70005BB2CE /* LoadingView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +359,7 @@
 			files = (
 				5B14FE602508EF02005BFD73 /* LaunchScreen.storyboard in Resources */,
 				5B14FE5D2508EF02005BFD73 /* Assets.xcassets in Resources */,
-				5B14FE582508EEFF005BFD73 /* Main.storyboard in Resources */,
+				5B14FE8D25090B9A005BFD73 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +370,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B14FE552508EEFF005BFD73 /* ViewController.swift in Sources */,
+				5B14FE8825090B9A005BFD73 /* SearchInteractorInput.swift in Sources */,
+				5B14FE9525090C09005BFD73 /* BaseRouter.swift in Sources */,
+				5B14FE8725090B9A005BFD73 /* SearchRouter.swift in Sources */,
+				5B14FE9725090C3F005BFD73 /* BaseRouting.swift in Sources */,
+				5B14FE8B25090B9A005BFD73 /* SearchInteractor.swift in Sources */,
+				5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */,
+				5B14FEA925090E2A005BFD73 /* TranslateRequest.swift in Sources */,
+				5B14FE6E2508EFC0005BFD73 /* BaseRequest.swift in Sources */,
+				5BC6D0BF250923D700EB20A6 /* LanguageList.swift in Sources */,
+				5B14FE8625090B9A005BFD73 /* SearchRouting.swift in Sources */,
 				5B14FE5B2508EEFF005BFD73 /* STest.xcdatamodeld in Sources */,
+				5B14FE8525090B9A005BFD73 /* SearchPresenter.swift in Sources */,
+				5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */,
+				5B14FE8A25090B9A005BFD73 /* SearchPresenterInput.swift in Sources */,
+				5B14FE742508FF03005BFD73 /* AppRouter.swift in Sources */,
+				5B14FE8C25090B9A005BFD73 /* SearchPresenterOutput.swift in Sources */,
+				5B14FEA525090DEC005BFD73 /* TranslateService.swift in Sources */,
 				5B14FE512508EEFF005BFD73 /* AppDelegate.swift in Sources */,
-				5B14FE532508EEFF005BFD73 /* SceneDelegate.swift in Sources */,
+				5B14FEA725090DF7005BFD73 /* TranslateServiceProtocol.swift in Sources */,
+				5B14FE9E25090CCA005BFD73 /* BasePresenting.swift in Sources */,
+				5B14FE8925090B9A005BFD73 /* SearchViewController.swift in Sources */,
+				5B14FE8425090B9A005BFD73 /* SearchInteractorOutput.swift in Sources */,
+				5B14FE8325090B9A005BFD73 /* SearchAssembler.swift in Sources */,
+				5B14FE6C2508EF80005BFD73 /* NetworkAPI.swift in Sources */,
+				5B14FE702508F05F005BFD73 /* NetworkError.swift in Sources */,
+				5B14FE7625090192005BFD73 /* VC.swift in Sources */,
+				5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5B14FE562508EEFF005BFD73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B14FE572508EEFF005BFD73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5B14FE5E2508EF02005BFD73 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
