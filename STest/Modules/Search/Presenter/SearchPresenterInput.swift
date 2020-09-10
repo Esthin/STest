@@ -9,7 +9,5 @@
 import Foundation
 
 protocol SearchPresenterInput: BasePresenting {
-    func didTapSourceLanguage()
-    func didTapTargetLanguage()
     func didEnterText(text: String?)
 }

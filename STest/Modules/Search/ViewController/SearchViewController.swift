@@ -10,47 +10,63 @@ import UIKit
 
 final class SearchViewController: BaseViewController {
     
-    @IBOutlet weak var textField: UITextField!
-	var presenter: SearchPresenterInput!
-
-	override func viewDidLoad() {
+    @IBOutlet private weak var inputTextView: UITextView!
+    @IBOutlet private weak var outputTextView: UITextView!
+    var presenter: SearchPresenterInput!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
     }
-
+    
     @objc
-    private func getHintsFromTextField(textField: UITextField) {
-        presenter.didEnterText(text: textField.text)
+    private func hitsFromTextView(textView: UITextView) {
+        presenter.didEnterText(text: textView.text)
     }
-
+    
+    @objc private func hideKeyboard() {
+        inputTextView.resignFirstResponder()
+    }
+    
 }
 
 extension SearchViewController: SearchPresenterOutput {
     
     func setTranslate(_ translate: String) {
-        // TODO
+        outputTextView.text = translate
     }
     
     func setup() {
-        textField.delegate = self
+        inputTextView.delegate = self
+        view.backgroundColor = .yellow
+        let gesute = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(gesute)
     }
     
     func setSourceLanguageTitle(_ title: String) {
-        // TODO
+        (navigationController?.navigationBar as? NavigationBar)?.setLeftButtonTitle(title)
     }
     
     func setTargetLanguageTitle(_ title: String) {
-        // TODO
+        (navigationController?.navigationBar as? NavigationBar)?.setRightButtonTitle(title)
     }
-
+    
+    func setupLeftNavBarAction(_ action: (() -> Void)?) {
+        (navigationController?.navigationBar as? NavigationBar)?.leftButtonAction = action
+    }
+    
+    func setupRightNavBarAction(_ action: (() -> Void)?) {
+        (navigationController?.navigationBar as? NavigationBar)?.rightButtonAction = action
+    }
+    
 }
 
-extension SearchViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
-        replacementString string: String) -> Bool {
-        guard textField == self.textField else { return false }
-        NSObject.cancelPreviousPerformRequests(withTarget:self,selector:#selector(SearchViewController.getHintsFromTextField),object: textField)
-        self.perform(#selector(SearchViewController.getHintsFromTextField),with:textField,afterDelay: 0.75)
+extension SearchViewController: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        guard let textView = inputTextView else { return false }
+        NSObject.cancelPreviousPerformRequests(withTarget:self,selector:#selector(SearchViewController.hitsFromTextView),object: textView)
+        self.perform(#selector(SearchViewController.hitsFromTextView),with:textView,afterDelay: 0.75)
         return true
     }
 }
+

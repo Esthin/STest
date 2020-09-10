@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Language {
+enum Language: CaseIterable {
     case russian
     case english
     case deutsch
@@ -23,4 +23,16 @@ enum Language {
             return "de"
         }
     }
+    
+    var title: String {
+        switch self {
+        case .russian:
+            return "Russian"
+        case .english:
+            return "English"
+        case .deutsch:
+            return "Deutsch"
+        }
+    }
+    
 }

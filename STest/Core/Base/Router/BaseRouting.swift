@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BaseRouting: class {
+protocol BaseRouting where Self: BaseRouter {
 
 }

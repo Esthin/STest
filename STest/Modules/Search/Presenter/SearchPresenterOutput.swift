@@ -10,6 +10,8 @@ import Foundation
 
 protocol SearchPresenterOutput: class {
     func setup()
+    func setupLeftNavBarAction(_ action: (() -> Void)?)
+    func setupRightNavBarAction(_ action: (() -> Void)?)
     func setSourceLanguageTitle(_ title: String)
     func setTargetLanguageTitle(_ title: String)
     func setTranslate(_ translate: String)

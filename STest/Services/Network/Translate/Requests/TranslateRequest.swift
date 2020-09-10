@@ -31,5 +31,3 @@ class TranslateRequest: BaseRequest<TranslateResponse> {
         self.input = input
     }
 }
-//https://systran-systran-platform-for-language-processing-v1.p.rapidapi.com/translation/text/translate?source=ru&target=en&input=доброе утро
-//https://systran-systran-platform-for-language-processing-v1.p.rapidapi.com/translation/text/translate?source=ru&input=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82&target=en

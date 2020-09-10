@@ -9,5 +9,7 @@
 import Foundation
 
 protocol SearchInteractorOutput: class {
+    func didChangeSourceLanguage(_ value: Language)
+    func didChangeTargetLanguage(_ value: Language)
     func didReceiveTranslateResponse(with result: Result<TranslateResponse,NetworkError>)
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2020 dev.bsl. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class SearchRouter: BaseRouter {
 
@@ -18,7 +18,9 @@ extension SearchRouter: SearchRouting {
 
 extension SearchRouting {
     func presentLanguageSelector(_ completion: @escaping (Language?) -> Void) {
-        // TODO
+        let nvc = BaseNavigationController(rootViewController: LanguageSelectorAssembler.createModule(completion: completion))
+        nvc.modalPresentationStyle = .fullScreen
+        viewController.present(nvc, animated: true)
     }
 }
 

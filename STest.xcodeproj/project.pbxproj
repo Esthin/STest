@@ -15,7 +15,6 @@
 		5B14FE6E2508EFC0005BFD73 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE6D2508EFC0005BFD73 /* BaseRequest.swift */; };
 		5B14FE702508F05F005BFD73 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE6F2508F05F005BFD73 /* NetworkError.swift */; };
 		5B14FE742508FF03005BFD73 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE732508FF03005BFD73 /* AppRouter.swift */; };
-		5B14FE7625090192005BFD73 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7525090192005BFD73 /* VC.swift */; };
 		5B14FE8325090B9A005BFD73 /* SearchAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7825090B9A005BFD73 /* SearchAssembler.swift */; };
 		5B14FE8425090B9A005BFD73 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7925090B9A005BFD73 /* SearchInteractorOutput.swift */; };
 		5B14FE8525090B9A005BFD73 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FE7A25090B9A005BFD73 /* SearchPresenter.swift */; };
@@ -36,7 +35,42 @@
 		5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */; };
 		5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E88FE25092F70005BB2CE /* LoadingView.swift */; };
 		5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E890025093108005BB2CE /* BaseViewController.swift */; };
+		5B7E890D250A0E71005BB2CE /* LanguageSelectorAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8902250A0E70005BB2CE /* LanguageSelectorAssembler.swift */; };
+		5B7E890E250A0E71005BB2CE /* LanguageSelectorInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8903250A0E70005BB2CE /* LanguageSelectorInteractorOutput.swift */; };
+		5B7E890F250A0E71005BB2CE /* LanguageSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8904250A0E70005BB2CE /* LanguageSelectorPresenter.swift */; };
+		5B7E8910250A0E71005BB2CE /* LanguageSelectorRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8905250A0E70005BB2CE /* LanguageSelectorRouting.swift */; };
+		5B7E8911250A0E71005BB2CE /* LanguageSelectorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8906250A0E70005BB2CE /* LanguageSelectorRouter.swift */; };
+		5B7E8912250A0E71005BB2CE /* LanguageSelectorInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8907250A0E70005BB2CE /* LanguageSelectorInteractorInput.swift */; };
+		5B7E8913250A0E71005BB2CE /* LanguageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8908250A0E70005BB2CE /* LanguageSelectorViewController.swift */; };
+		5B7E8914250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8909250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift */; };
+		5B7E8915250A0E71005BB2CE /* LanguageSelectorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E890A250A0E71005BB2CE /* LanguageSelectorInteractor.swift */; };
+		5B7E8916250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E890B250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift */; };
+		5B7E8917250A0E71005BB2CE /* LanguageSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E890C250A0E71005BB2CE /* LanguageSelectorViewController.xib */; };
+		5B7E8920250A1208005BB2CE /* LanguageTableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E891F250A1208005BB2CE /* LanguageTableHandler.swift */; };
+		5B7E8922250A1213005BB2CE /* LanguageTableHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8921250A1213005BB2CE /* LanguageTableHandling.swift */; };
+		5BC1CCD7250A20D00034A615 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1CCD6250A20D00034A615 /* NavigationBar.swift */; };
+		5BC1CCD9250A560F0034A615 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1CCD8250A560F0034A615 /* BaseNavigationController.swift */; };
+		5BC1CCDB250A586C0034A615 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1CCDA250A586C0034A615 /* MainTabBarController.swift */; };
 		5BC6D0BF250923D700EB20A6 /* LanguageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6D0BE250923D600EB20A6 /* LanguageList.swift */; };
+		5BC8B7E4250A6810004181FB /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7E3250A6810004181FB /* StorageService.swift */; };
+		5BC8B7E6250A6825004181FB /* StorageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7E5250A6825004181FB /* StorageReceiver.swift */; };
+		5BC8B7E8250A6871004181FB /* StorageSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7E7250A6871004181FB /* StorageSetter.swift */; };
+		5BC8B7F4250A68B9004181FB /* HistoryAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7E9250A68B9004181FB /* HistoryAssembler.swift */; };
+		5BC8B7F5250A68B9004181FB /* HistoryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7EA250A68B9004181FB /* HistoryInteractorOutput.swift */; };
+		5BC8B7F6250A68B9004181FB /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7EB250A68B9004181FB /* HistoryPresenter.swift */; };
+		5BC8B7F7250A68B9004181FB /* HistoryRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7EC250A68B9004181FB /* HistoryRouting.swift */; };
+		5BC8B7F8250A68B9004181FB /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7ED250A68B9004181FB /* HistoryRouter.swift */; };
+		5BC8B7F9250A68B9004181FB /* HistoryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7EE250A68B9004181FB /* HistoryInteractorInput.swift */; };
+		5BC8B7FA250A68B9004181FB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7EF250A68B9004181FB /* HistoryViewController.swift */; };
+		5BC8B7FB250A68B9004181FB /* HistoryPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7F0250A68B9004181FB /* HistoryPresenterInput.swift */; };
+		5BC8B7FC250A68B9004181FB /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7F1250A68B9004181FB /* HistoryInteractor.swift */; };
+		5BC8B7FD250A68B9004181FB /* HistoryPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B7F2250A68B9004181FB /* HistoryPresenterOutput.swift */; };
+		5BC8B7FE250A68B9004181FB /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8B7F3250A68B9004181FB /* HistoryViewController.xib */; };
+		5BC8B807250A6949004181FB /* HistoryItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B806250A6949004181FB /* HistoryItemModel.swift */; };
+		5BC8B809250A6980004181FB /* HistoryTableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B808250A6980004181FB /* HistoryTableHandler.swift */; };
+		5BC8B80B250A698A004181FB /* HistoryTableHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B80A250A698A004181FB /* HistoryTableHandling.swift */; };
+		5BC8B80F250A6D53004181FB /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B80D250A6D53004181FB /* HistoryTableViewCell.swift */; };
+		5BC8B810250A6D53004181FB /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8B80E250A6D53004181FB /* HistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +84,6 @@
 		5B14FE6D2508EFC0005BFD73 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		5B14FE6F2508F05F005BFD73 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5B14FE732508FF03005BFD73 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		5B14FE7525090192005BFD73 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
 		5B14FE7825090B9A005BFD73 /* SearchAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembler.swift; sourceTree = "<group>"; };
 		5B14FE7925090B9A005BFD73 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
 		5B14FE7A25090B9A005BFD73 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -71,7 +104,42 @@
 		5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponse.swift; sourceTree = "<group>"; };
 		5B7E88FE25092F70005BB2CE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5B7E890025093108005BB2CE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5B7E8902250A0E70005BB2CE /* LanguageSelectorAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorAssembler.swift; sourceTree = "<group>"; };
+		5B7E8903250A0E70005BB2CE /* LanguageSelectorInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInteractorOutput.swift; sourceTree = "<group>"; };
+		5B7E8904250A0E70005BB2CE /* LanguageSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorPresenter.swift; sourceTree = "<group>"; };
+		5B7E8905250A0E70005BB2CE /* LanguageSelectorRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorRouting.swift; sourceTree = "<group>"; };
+		5B7E8906250A0E70005BB2CE /* LanguageSelectorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorRouter.swift; sourceTree = "<group>"; };
+		5B7E8907250A0E70005BB2CE /* LanguageSelectorInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInteractorInput.swift; sourceTree = "<group>"; };
+		5B7E8908250A0E70005BB2CE /* LanguageSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorViewController.swift; sourceTree = "<group>"; };
+		5B7E8909250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorPresenterInput.swift; sourceTree = "<group>"; };
+		5B7E890A250A0E71005BB2CE /* LanguageSelectorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInteractor.swift; sourceTree = "<group>"; };
+		5B7E890B250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorPresenterOutput.swift; sourceTree = "<group>"; };
+		5B7E890C250A0E71005BB2CE /* LanguageSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageSelectorViewController.xib; sourceTree = "<group>"; };
+		5B7E891F250A1208005BB2CE /* LanguageTableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableHandler.swift; sourceTree = "<group>"; };
+		5B7E8921250A1213005BB2CE /* LanguageTableHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableHandling.swift; sourceTree = "<group>"; };
+		5BC1CCD6250A20D00034A615 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		5BC1CCD8250A560F0034A615 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		5BC1CCDA250A586C0034A615 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5BC6D0BE250923D600EB20A6 /* LanguageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageList.swift; sourceTree = "<group>"; };
+		5BC8B7E3250A6810004181FB /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		5BC8B7E5250A6825004181FB /* StorageReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageReceiver.swift; sourceTree = "<group>"; };
+		5BC8B7E7250A6871004181FB /* StorageSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSetter.swift; sourceTree = "<group>"; };
+		5BC8B7E9250A68B9004181FB /* HistoryAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssembler.swift; sourceTree = "<group>"; };
+		5BC8B7EA250A68B9004181FB /* HistoryInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractorOutput.swift; sourceTree = "<group>"; };
+		5BC8B7EB250A68B9004181FB /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		5BC8B7EC250A68B9004181FB /* HistoryRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouting.swift; sourceTree = "<group>"; };
+		5BC8B7ED250A68B9004181FB /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		5BC8B7EE250A68B9004181FB /* HistoryInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractorInput.swift; sourceTree = "<group>"; };
+		5BC8B7EF250A68B9004181FB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5BC8B7F0250A68B9004181FB /* HistoryPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenterInput.swift; sourceTree = "<group>"; };
+		5BC8B7F1250A68B9004181FB /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		5BC8B7F2250A68B9004181FB /* HistoryPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenterOutput.swift; sourceTree = "<group>"; };
+		5BC8B7F3250A68B9004181FB /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		5BC8B806250A6949004181FB /* HistoryItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItemModel.swift; sourceTree = "<group>"; };
+		5BC8B808250A6980004181FB /* HistoryTableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHandler.swift; sourceTree = "<group>"; };
+		5BC8B80A250A698A004181FB /* HistoryTableHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHandling.swift; sourceTree = "<group>"; };
+		5BC8B80D250A6D53004181FB /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5BC8B80E250A6D53004181FB /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +179,6 @@
 				5B14FE9F25090D68005BFD73 /* Services */,
 				5B14FE502508EEFF005BFD73 /* AppDelegate.swift */,
 				5B14FE732508FF03005BFD73 /* AppRouter.swift */,
-				5B14FE7525090192005BFD73 /* VC.swift */,
 				5B14FE5C2508EF02005BFD73 /* Assets.xcassets */,
 				5B14FE5E2508EF02005BFD73 /* LaunchScreen.storyboard */,
 				5B14FE612508EF02005BFD73 /* Info.plist */,
@@ -123,6 +190,7 @@
 		5B14FE672508EF1A005BFD73 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5BC8B7E1250A66FE004181FB /* History */,
 				5BC6D0A125091B8500EB20A6 /* LanguageSelector */,
 				5B14FE7725090B86005BFD73 /* Search */,
 			);
@@ -132,6 +200,7 @@
 		5B14FE682508EF22005BFD73 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5BC8B7E2250A67FC004181FB /* Storage */,
 				5B14FE9325090BF1005BFD73 /* Base */,
 				5B14FE6A2508EF5B005BFD73 /* Network */,
 				5BC6D0BE250923D600EB20A6 /* LanguageList.swift */,
@@ -220,6 +289,8 @@
 				5B14FE9C25090CC0005BFD73 /* Presenting */,
 				5B14FE9825090C5D005BFD73 /* Router */,
 				5B7E890025093108005BB2CE /* BaseViewController.swift */,
+				5BC1CCD8250A560F0034A615 /* BaseNavigationController.swift */,
+				5BC1CCDA250A586C0034A615 /* MainTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -284,9 +355,70 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		5B7E8918250A0ED9005BB2CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E8908250A0E70005BB2CE /* LanguageSelectorViewController.swift */,
+				5B7E890C250A0E71005BB2CE /* LanguageSelectorViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5B7E8919250A0EE7005BB2CE /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E8902250A0E70005BB2CE /* LanguageSelectorAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		5B7E891A250A0EF3005BB2CE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E8905250A0E70005BB2CE /* LanguageSelectorRouting.swift */,
+				5B7E8906250A0E70005BB2CE /* LanguageSelectorRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B7E891B250A0F2A005BB2CE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E890A250A0E71005BB2CE /* LanguageSelectorInteractor.swift */,
+				5B7E8907250A0E70005BB2CE /* LanguageSelectorInteractorInput.swift */,
+				5B7E8903250A0E70005BB2CE /* LanguageSelectorInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5B7E891D250A0F3C005BB2CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E8904250A0E70005BB2CE /* LanguageSelectorPresenter.swift */,
+				5B7E8909250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift */,
+				5B7E890B250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5B7E891E250A11EC005BB2CE /* TableHandler */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E891F250A1208005BB2CE /* LanguageTableHandler.swift */,
+				5B7E8921250A1213005BB2CE /* LanguageTableHandling.swift */,
+			);
+			path = TableHandler;
+			sourceTree = "<group>";
+		};
 		5BC6D0A125091B8500EB20A6 /* LanguageSelector */ = {
 			isa = PBXGroup;
 			children = (
+				5B7E891E250A11EC005BB2CE /* TableHandler */,
+				5B7E8919250A0EE7005BB2CE /* Assembler */,
+				5B7E891A250A0EF3005BB2CE /* Router */,
+				5B7E891B250A0F2A005BB2CE /* Interactor */,
+				5B7E891D250A0F3C005BB2CE /* Presenter */,
+				5B7E8918250A0ED9005BB2CE /* ViewController */,
 			);
 			path = LanguageSelector;
 			sourceTree = "<group>";
@@ -295,8 +427,106 @@
 			isa = PBXGroup;
 			children = (
 				5B7E88FE25092F70005BB2CE /* LoadingView.swift */,
+				5BC1CCD6250A20D00034A615 /* NavigationBar.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5BC8B7E1250A66FE004181FB /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B80C250A69F8004181FB /* Cell */,
+				5BC8B805250A6936004181FB /* Model */,
+				5BC8B804250A6921004181FB /* TableHandler */,
+				5BC8B803250A6901004181FB /* Assembler */,
+				5BC8B802250A68FA004181FB /* Router */,
+				5BC8B801250A68E9004181FB /* Interactor */,
+				5BC8B800250A68E0004181FB /* Presenter */,
+				5BC8B7FF250A68CC004181FB /* ViewController */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5BC8B7E2250A67FC004181FB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7E3250A6810004181FB /* StorageService.swift */,
+				5BC8B7E5250A6825004181FB /* StorageReceiver.swift */,
+				5BC8B7E7250A6871004181FB /* StorageSetter.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5BC8B7FF250A68CC004181FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7EF250A68B9004181FB /* HistoryViewController.swift */,
+				5BC8B7F3250A68B9004181FB /* HistoryViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5BC8B800250A68E0004181FB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7EB250A68B9004181FB /* HistoryPresenter.swift */,
+				5BC8B7F0250A68B9004181FB /* HistoryPresenterInput.swift */,
+				5BC8B7F2250A68B9004181FB /* HistoryPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC8B801250A68E9004181FB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7F1250A68B9004181FB /* HistoryInteractor.swift */,
+				5BC8B7EE250A68B9004181FB /* HistoryInteractorInput.swift */,
+				5BC8B7EA250A68B9004181FB /* HistoryInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC8B802250A68FA004181FB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7EC250A68B9004181FB /* HistoryRouting.swift */,
+				5BC8B7ED250A68B9004181FB /* HistoryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC8B803250A6901004181FB /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B7E9250A68B9004181FB /* HistoryAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		5BC8B804250A6921004181FB /* TableHandler */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B808250A6980004181FB /* HistoryTableHandler.swift */,
+				5BC8B80A250A698A004181FB /* HistoryTableHandling.swift */,
+			);
+			path = TableHandler;
+			sourceTree = "<group>";
+		};
+		5BC8B805250A6936004181FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B806250A6949004181FB /* HistoryItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BC8B80C250A69F8004181FB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5BC8B80D250A6D53004181FB /* HistoryTableViewCell.swift */,
+				5BC8B80E250A6D53004181FB /* HistoryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +590,9 @@
 				5B14FE602508EF02005BFD73 /* LaunchScreen.storyboard in Resources */,
 				5B14FE5D2508EF02005BFD73 /* Assets.xcassets in Resources */,
 				5B14FE8D25090B9A005BFD73 /* SearchViewController.xib in Resources */,
+				5BC8B7FE250A68B9004181FB /* HistoryViewController.xib in Resources */,
+				5BC8B810250A6D53004181FB /* HistoryTableViewCell.xib in Resources */,
+				5B7E8917250A0E71005BB2CE /* LanguageSelectorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,31 +605,62 @@
 			files = (
 				5B14FE8825090B9A005BFD73 /* SearchInteractorInput.swift in Sources */,
 				5B14FE9525090C09005BFD73 /* BaseRouter.swift in Sources */,
+				5B7E8910250A0E71005BB2CE /* LanguageSelectorRouting.swift in Sources */,
 				5B14FE8725090B9A005BFD73 /* SearchRouter.swift in Sources */,
 				5B14FE9725090C3F005BFD73 /* BaseRouting.swift in Sources */,
 				5B14FE8B25090B9A005BFD73 /* SearchInteractor.swift in Sources */,
 				5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */,
 				5B14FEA925090E2A005BFD73 /* TranslateRequest.swift in Sources */,
+				5BC8B7E8250A6871004181FB /* StorageSetter.swift in Sources */,
+				5B7E8916250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift in Sources */,
 				5B14FE6E2508EFC0005BFD73 /* BaseRequest.swift in Sources */,
+				5BC8B7FD250A68B9004181FB /* HistoryPresenterOutput.swift in Sources */,
 				5BC6D0BF250923D700EB20A6 /* LanguageList.swift in Sources */,
+				5B7E8920250A1208005BB2CE /* LanguageTableHandler.swift in Sources */,
+				5BC8B80B250A698A004181FB /* HistoryTableHandling.swift in Sources */,
+				5BC8B80F250A6D53004181FB /* HistoryTableViewCell.swift in Sources */,
 				5B14FE8625090B9A005BFD73 /* SearchRouting.swift in Sources */,
+				5BC8B7F7250A68B9004181FB /* HistoryRouting.swift in Sources */,
 				5B14FE5B2508EEFF005BFD73 /* STest.xcdatamodeld in Sources */,
+				5BC1CCDB250A586C0034A615 /* MainTabBarController.swift in Sources */,
 				5B14FE8525090B9A005BFD73 /* SearchPresenter.swift in Sources */,
 				5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */,
+				5B7E8915250A0E71005BB2CE /* LanguageSelectorInteractor.swift in Sources */,
+				5B7E890E250A0E71005BB2CE /* LanguageSelectorInteractorOutput.swift in Sources */,
+				5B7E8922250A1213005BB2CE /* LanguageTableHandling.swift in Sources */,
 				5B14FE8A25090B9A005BFD73 /* SearchPresenterInput.swift in Sources */,
 				5B14FE742508FF03005BFD73 /* AppRouter.swift in Sources */,
+				5BC8B7F4250A68B9004181FB /* HistoryAssembler.swift in Sources */,
+				5BC8B7FB250A68B9004181FB /* HistoryPresenterInput.swift in Sources */,
 				5B14FE8C25090B9A005BFD73 /* SearchPresenterOutput.swift in Sources */,
 				5B14FEA525090DEC005BFD73 /* TranslateService.swift in Sources */,
+				5B7E890D250A0E71005BB2CE /* LanguageSelectorAssembler.swift in Sources */,
 				5B14FE512508EEFF005BFD73 /* AppDelegate.swift in Sources */,
 				5B14FEA725090DF7005BFD73 /* TranslateServiceProtocol.swift in Sources */,
 				5B14FE9E25090CCA005BFD73 /* BasePresenting.swift in Sources */,
+				5BC1CCD9250A560F0034A615 /* BaseNavigationController.swift in Sources */,
+				5BC8B7FC250A68B9004181FB /* HistoryInteractor.swift in Sources */,
+				5BC8B807250A6949004181FB /* HistoryItemModel.swift in Sources */,
 				5B14FE8925090B9A005BFD73 /* SearchViewController.swift in Sources */,
+				5B7E8914250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift in Sources */,
+				5BC8B809250A6980004181FB /* HistoryTableHandler.swift in Sources */,
+				5BC8B7E6250A6825004181FB /* StorageReceiver.swift in Sources */,
 				5B14FE8425090B9A005BFD73 /* SearchInteractorOutput.swift in Sources */,
 				5B14FE8325090B9A005BFD73 /* SearchAssembler.swift in Sources */,
 				5B14FE6C2508EF80005BFD73 /* NetworkAPI.swift in Sources */,
 				5B14FE702508F05F005BFD73 /* NetworkError.swift in Sources */,
-				5B14FE7625090192005BFD73 /* VC.swift in Sources */,
+				5BC8B7F9250A68B9004181FB /* HistoryInteractorInput.swift in Sources */,
+				5BC8B7F8250A68B9004181FB /* HistoryRouter.swift in Sources */,
+				5BC8B7F5250A68B9004181FB /* HistoryInteractorOutput.swift in Sources */,
+				5BC8B7FA250A68B9004181FB /* HistoryViewController.swift in Sources */,
+				5B7E8912250A0E71005BB2CE /* LanguageSelectorInteractorInput.swift in Sources */,
+				5B7E8911250A0E71005BB2CE /* LanguageSelectorRouter.swift in Sources */,
+				5BC8B7E4250A6810004181FB /* StorageService.swift in Sources */,
+				5BC8B7F6250A68B9004181FB /* HistoryPresenter.swift in Sources */,
+				5BC1CCD7250A20D00034A615 /* NavigationBar.swift in Sources */,
 				5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */,
+				5B7E890F250A0E71005BB2CE /* LanguageSelectorPresenter.swift in Sources */,
+				5B7E8913250A0E71005BB2CE /* LanguageSelectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

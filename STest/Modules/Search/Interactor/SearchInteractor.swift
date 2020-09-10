@@ -11,8 +11,18 @@ import Foundation
 final class SearchInteractor {
     private weak var output: SearchInteractorOutput?
     private let netService: TranslateServiceProtocol
-    private var sourceLanguage: Language = .russian
-    private var targetLanguage: Language = .english
+    private var sourceLanguage: Language? {
+        didSet {
+            guard let language = sourceLanguage else { return }
+            output?.didChangeSourceLanguage(language)
+        }
+    }
+    private var targetLanguage: Language? {
+        didSet {
+            guard let language = targetLanguage else { return }
+            output?.didChangeTargetLanguage(language)
+        }
+    }
     
     init(netService: TranslateServiceProtocol = TranslateService()) {
         self.netService = netService
@@ -30,13 +40,15 @@ extension SearchInteractor: SearchInteractorInput {
     }
     
     func fetchTranslate(for word: String) {
-        netService.fetchTraslate(source: sourceLanguage, target: targetLanguage, input: word) {[weak self] result in
+        netService.fetchTraslate(source: sourceLanguage ?? .russian, target: targetLanguage ?? .english, input: word) {[weak self] result in
             self?.output?.didReceiveTranslateResponse(with: result)
         }
     }
     
     func attach(_ model: SearchInteractorOutput) {
         output = model
+        sourceLanguage = .russian
+        targetLanguage = .english
     }
 
 }
