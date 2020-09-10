@@ -24,23 +24,23 @@ final class SearchViewController: BaseViewController {
         presenter.didEnterText(text: textView.text)
     }
     
-    @objc private func hideKeyboard() {
-        inputTextView.resignFirstResponder()
-    }
-    
 }
 
 extension SearchViewController: SearchPresenterOutput {
+    func setInput(_ input: String?) {
+        inputTextView.text = input
+    }
     
-    func setTranslate(_ translate: String) {
+    func setTranslate(_ translate: String?) {
         outputTextView.text = translate
     }
     
     func setup() {
         inputTextView.delegate = self
         view.backgroundColor = .yellow
-        let gesute = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-        view.addGestureRecognizer(gesute)
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tap)
+//        navigationController?.navigationBar.addGestureRecognizer(tap)
     }
     
     func setSourceLanguageTitle(_ title: String) {

@@ -1,5 +1,5 @@
 //
-//  HistoryRouting.swift
+//  TranslateSaveProtocol.swift
 //  STest
 //
 //  Created by Dmitry Kosyakov on 10.09.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol HistoryRouting: BaseRouting {
-    func presentTranslate()
+protocol TranslateHistorySaver {
+    func saveTranslate(source: String, result: String)
 }

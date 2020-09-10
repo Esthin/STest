@@ -9,5 +9,5 @@
 import Foundation
 
 protocol StorageSetter {
-    func save()
+    func save(_ data: StorageEntity)
 }

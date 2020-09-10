@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct HistoryItemModel {
-    let sourceText: String
-    let targetText: String
+struct HistoryItemModel: Codable, StorageEntity {
+    var title: String {
+        return "HistoryItem"
+    }
+    let source: String
+    let target: String
 }

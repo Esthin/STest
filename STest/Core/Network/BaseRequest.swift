@@ -71,6 +71,10 @@ class BaseRequest<ResponseObject: Decodable>: BaseRequestProtocol {
 
 private extension URLComponents {
     mutating func setQueryItems(with parameters: [String: String]) {
-        self.queryItems = parameters.map { URLQueryItem(name: $0.key, value: $0.value) }
+        // Прямо дичь, в апи при неверном порядке параметров 404
+        var items = parameters.map { URLQueryItem(name: $0.key, value: $0.value) }
+        items.sort { $0.name > $1.name }
+        items.count == 3 ? items.swapAt(0, 1) : nil
+        self.queryItems = items
     }
 }

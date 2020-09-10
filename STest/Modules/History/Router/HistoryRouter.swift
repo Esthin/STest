@@ -9,10 +9,14 @@
 import Foundation
 
 final class HistoryRouter: BaseRouter {
-
+    
 }
 
 extension HistoryRouter: HistoryRouting {
-    
+    func presentTranslate() {
+        if let historySeq = viewController.tabBarController?.viewControllers?.enumerated().first(where: { $0.element is BaseNavigationController }), (historySeq.element as? BaseNavigationController)?.viewControllers.contains(where: { $0 is SearchViewController }) ?? false {
+            viewController.tabBarController?.selectedIndex = historySeq.offset
+        }
+    }
 }
 

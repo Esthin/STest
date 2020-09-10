@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HistoryInteractorOutput: class {
-
+    func didReceiveHistory(data: [HistoryItemModel])
 }

@@ -11,6 +11,7 @@ import Foundation
 final class SearchInteractor {
     private weak var output: SearchInteractorOutput?
     private let netService: TranslateServiceProtocol
+    private let storageService: TranslateHistorySaver
     private var sourceLanguage: Language? {
         didSet {
             guard let language = sourceLanguage else { return }
@@ -24,13 +25,23 @@ final class SearchInteractor {
         }
     }
     
-    init(netService: TranslateServiceProtocol = TranslateService()) {
+    init(netService: TranslateServiceProtocol = TranslateService(), storageService: TranslateHistorySaver = HistoryStorageService()) {
         self.netService = netService
+        self.storageService = storageService
+        NotificationCenter.default.addObserver(self, selector: #selector(self.receiveHistoryNotification(_:)), name: .updateTranslateScreen, object: nil)
+    }
+    
+    @objc func receiveHistoryNotification(_ notification: NSNotification) {
+        output?.didReceiveHistoryNotification(notification)
     }
 
 }
 
 extension SearchInteractor: SearchInteractorInput {
+    func saveTranslate(source: String, result: String) {
+        storageService.saveTranslate(source: source, result: result)
+    }
+    
     func setSourceLanguage(_ language: Language) {
         sourceLanguage = language
     }
@@ -41,7 +52,7 @@ extension SearchInteractor: SearchInteractorInput {
     
     func fetchTranslate(for word: String) {
         netService.fetchTraslate(source: sourceLanguage ?? .russian, target: targetLanguage ?? .english, input: word) {[weak self] result in
-            self?.output?.didReceiveTranslateResponse(with: result)
+            self?.output?.didReceiveTranslateResponse(with: result, for: word)
         }
     }
     

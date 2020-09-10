@@ -14,14 +14,14 @@ class NavigationBar: UINavigationBar {
     var leftButtonAction: (() -> Void)?
     
     private let leftButton: UIButton = {
-        let button = UIButton()
+        let button = BarButton()
         button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(NavigationBar.didTapLeftButton), for: .touchUpInside)
         return button
     }()
     
     private let rightButton: UIButton = {
-        let button = UIButton()
+        let button = BarButton()
         button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(NavigationBar.didTapRightButton), for: .touchUpInside)
         return button
@@ -41,6 +41,10 @@ class NavigationBar: UINavigationBar {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.window?.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
     
     private func commonInit() {

@@ -47,6 +47,17 @@ extension SearchPresenter: SearchPresenterInput {
 }
 
 extension SearchPresenter: SearchInteractorOutput {
+    func didReceiveHistoryNotification(_ norification: NSNotification) {
+        if let dict = norification.userInfo as NSDictionary? {
+            let history = try? HistoryItemModel(from: dict)
+            view.setInput(history?.source)
+            view.setTranslate(history?.target)
+        } else {
+            view.setInput(nil)
+            view.setTranslate(nil)
+        }
+    }
+    
     func didChangeSourceLanguage(_ value: Language) {
         view.setSourceLanguageTitle(value.title)
     }
@@ -55,19 +66,20 @@ extension SearchPresenter: SearchInteractorOutput {
         view.setTargetLanguageTitle(value.title)
     }
     
-    func didReceiveTranslateResponse(with result: Result<TranslateResponse, NetworkError>) {
+    func didReceiveTranslateResponse(with result: Result<TranslateResponse, NetworkError>, for word: String) {
         DispatchQueue.main.async {
             defer { self.view.hideLoader() }
             switch result {
             case .success(let response):
-                print(response)
-            case .failure(let error):
-                print(error)
+                guard let translate = response.outputs.first?.output else { return }
+                self.view.setTranslate(translate)
+                self.interactor.saveTranslate(source: word, result: translate)
+            case .failure( _):
+                self.view.setTranslate(nil)
             }
         }
     }
-    
-    
+
 }
 
 

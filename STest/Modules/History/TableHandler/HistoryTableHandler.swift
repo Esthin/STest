@@ -17,7 +17,7 @@ final class HistoryTableHandler: NSObject {
 extension HistoryTableHandler: HistoryTableHandling {
     func attach(_ tableView: UITableView) {
         self.tableView = tableView
-        tableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: String(describing: HistoryTableViewCell.self))
+        tableView.register(UINib(nibName: String(describing: HistoryTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: HistoryTableViewCell.self))
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -26,7 +26,6 @@ extension HistoryTableHandler: HistoryTableHandling {
         data = items
         tableView.reloadData()
     }
-    
 }
 
 extension HistoryTableHandler: UITableViewDelegate, UITableViewDataSource {
@@ -36,12 +35,17 @@ extension HistoryTableHandler: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HistoryTableViewCell.self)) as? HistoryTableViewCell
+        cell?.selectionStyle = .none
         cell?.setData(data[indexPath.row])
         return cell ?? .init()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelectItem?(data[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
     }
 
 }

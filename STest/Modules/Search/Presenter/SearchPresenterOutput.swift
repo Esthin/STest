@@ -14,7 +14,8 @@ protocol SearchPresenterOutput: class {
     func setupRightNavBarAction(_ action: (() -> Void)?)
     func setSourceLanguageTitle(_ title: String)
     func setTargetLanguageTitle(_ title: String)
-    func setTranslate(_ translate: String)
+    func setTranslate(_ translate: String?)
+    func setInput(_ input: String?)
     func showLoader()
     func hideLoader()
 }

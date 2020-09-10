@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HistoryPresenterInput: BasePresenting {
-    
+    func didTapDeleteHistory()
 }

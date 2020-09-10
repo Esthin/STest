@@ -24,10 +24,14 @@ final class HistoryViewController: BaseViewController {
         presenter.viewDidLoad()
     }
     
-    @objc private func didTapRemoveAll() {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
     }
     
+    @objc private func didTapRemoveAll() {
+        presenter.didTapDeleteHistory()
+    }
 }
 
 extension HistoryViewController: HistoryPresenterOutput {
@@ -46,7 +50,7 @@ extension HistoryViewController: HistoryPresenterOutput {
     }
     
     func setHistoryData(_ data: [HistoryItemModel]) {
-        
+        tableHandler.setItems(data)
     }
     
 }

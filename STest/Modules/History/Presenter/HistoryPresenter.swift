@@ -23,16 +23,30 @@ final class HistoryPresenter {
         interactor.attach(self)
         view.setupNavBar()
         view.setupTableView()
+        view.setupTableActions {[weak self] data in
+            self?.interactor.postTranslateNotification(data: data)
+            self?.router.presentTranslate()
+        }
+    }
+    
+    func viewWillAppear() {
+        interactor.getTranslateHistory()
     }
     
 }
 
 extension HistoryPresenter: HistoryPresenterInput {
+    func didTapDeleteHistory() {
+        interactor.postTranslateNotification(data: nil)
+        interactor.clearHeastory()
+    }
     
 }
 
 extension HistoryPresenter: HistoryInteractorOutput {
-    
+    func didReceiveHistory(data: [HistoryItemModel]) {
+        view.setHistoryData(data)
+    }
 }
 
 

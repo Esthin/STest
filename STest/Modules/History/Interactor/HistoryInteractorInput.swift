@@ -10,4 +10,7 @@ import Foundation
 
 protocol HistoryInteractorInput: class {
     func attach(_ model: HistoryInteractorOutput)
+    func getTranslateHistory()
+    func clearHeastory()
+    func postTranslateNotification(data: HistoryItemModel?)
 }

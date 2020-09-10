@@ -1,5 +1,5 @@
 //
-//  HistoryRouting.swift
+//  StorageRemover.swift
 //  STest
 //
 //  Created by Dmitry Kosyakov on 10.09.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol HistoryRouting: BaseRouting {
-    func presentTranslate()
+protocol StorageRemover {
+    func removeData(for entity: String)
 }

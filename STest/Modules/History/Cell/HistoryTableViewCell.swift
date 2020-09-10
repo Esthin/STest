@@ -19,8 +19,8 @@ class HistoryTableViewCell: UITableViewCell {
     }
     
     func setData(_ data: HistoryItemModel) {
-        sourceText.text = data.sourceText
-        targetText.text = data.targetText
+        sourceText.text = data.source
+        targetText.text = data.target
     }
     
 }

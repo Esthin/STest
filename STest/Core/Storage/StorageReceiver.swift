@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreData
 
 protocol StorageReceiver {
-    func fetch() 
+    func fetch(for entity: String) -> [NSManagedObject]
 }
 

@@ -33,6 +33,11 @@
 		5B14FEA725090DF7005BFD73 /* TranslateServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEA625090DF7005BFD73 /* TranslateServiceProtocol.swift */; };
 		5B14FEA925090E2A005BFD73 /* TranslateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEA825090E2A005BFD73 /* TranslateRequest.swift */; };
 		5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */; };
+		5B191B7D250A87A3009694D7 /* HistoryStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B191B7C250A87A3009694D7 /* HistoryStorageService.swift */; };
+		5B5B6DD7250AB44D00FFA9D6 /* StorageRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B6DD6250AB44D00FFA9D6 /* StorageRemover.swift */; };
+		5B5B6DDA250AB7A200FFA9D6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B6DD9250AB7A200FFA9D6 /* NotificationService.swift */; };
+		5B5B6DDC250AB7C000FFA9D6 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B6DDB250AB7C000FFA9D6 /* NotificationList.swift */; };
+		5B5B6DE0250AD14E00FFA9D6 /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B6DDF250AD14E00FFA9D6 /* BarButton.swift */; };
 		5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E88FE25092F70005BB2CE /* LoadingView.swift */; };
 		5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E890025093108005BB2CE /* BaseViewController.swift */; };
 		5B7E890D250A0E71005BB2CE /* LanguageSelectorAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E8902250A0E70005BB2CE /* LanguageSelectorAssembler.swift */; };
@@ -71,6 +76,12 @@
 		5BC8B80B250A698A004181FB /* HistoryTableHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B80A250A698A004181FB /* HistoryTableHandling.swift */; };
 		5BC8B80F250A6D53004181FB /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8B80D250A6D53004181FB /* HistoryTableViewCell.swift */; };
 		5BC8B810250A6D53004181FB /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8B80E250A6D53004181FB /* HistoryTableViewCell.xib */; };
+		5BECC22D250A9A9600E25A25 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC22C250A9A9600E25A25 /* Encodable.swift */; };
+		5BECC22F250A9C2400E25A25 /* StorageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC22E250A9C2400E25A25 /* StorageEntity.swift */; };
+		5BECC231250AAB8D00E25A25 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC230250AAB8D00E25A25 /* Decodable.swift */; };
+		5BECC233250AAD6A00E25A25 /* TranslateSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC232250AAD6A00E25A25 /* TranslateSaver.swift */; };
+		5BECC235250AADA500E25A25 /* TranslateHistoryReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC234250AADA500E25A25 /* TranslateHistoryReciever.swift */; };
+		5BECC237250AB1DC00E25A25 /* TranslateHistoryRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECC236250AB1DC00E25A25 /* TranslateHistoryRemover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +113,11 @@
 		5B14FEA625090DF7005BFD73 /* TranslateServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceProtocol.swift; sourceTree = "<group>"; };
 		5B14FEA825090E2A005BFD73 /* TranslateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequest.swift; sourceTree = "<group>"; };
 		5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponse.swift; sourceTree = "<group>"; };
+		5B191B7C250A87A3009694D7 /* HistoryStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStorageService.swift; sourceTree = "<group>"; };
+		5B5B6DD6250AB44D00FFA9D6 /* StorageRemover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageRemover.swift; sourceTree = "<group>"; };
+		5B5B6DD9250AB7A200FFA9D6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		5B5B6DDB250AB7C000FFA9D6 /* NotificationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
+		5B5B6DDF250AD14E00FFA9D6 /* BarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
 		5B7E88FE25092F70005BB2CE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5B7E890025093108005BB2CE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5B7E8902250A0E70005BB2CE /* LanguageSelectorAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorAssembler.swift; sourceTree = "<group>"; };
@@ -140,6 +156,12 @@
 		5BC8B80A250A698A004181FB /* HistoryTableHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHandling.swift; sourceTree = "<group>"; };
 		5BC8B80D250A6D53004181FB /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5BC8B80E250A6D53004181FB /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		5BECC22C250A9A9600E25A25 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		5BECC22E250A9C2400E25A25 /* StorageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageEntity.swift; sourceTree = "<group>"; };
+		5BECC230250AAB8D00E25A25 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		5BECC232250AAD6A00E25A25 /* TranslateSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateSaver.swift; sourceTree = "<group>"; };
+		5BECC234250AADA500E25A25 /* TranslateHistoryReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateHistoryReciever.swift; sourceTree = "<group>"; };
+		5BECC236250AB1DC00E25A25 /* TranslateHistoryRemover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateHistoryRemover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +222,7 @@
 		5B14FE682508EF22005BFD73 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5B5B6DD8250AB79300FFA9D6 /* Notification */,
 				5BC8B7E2250A67FC004181FB /* Storage */,
 				5B14FE9325090BF1005BFD73 /* Base */,
 				5B14FE6A2508EF5B005BFD73 /* Network */,
@@ -211,6 +234,8 @@
 		5B14FE692508EF27005BFD73 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5BECC22C250A9A9600E25A25 /* Encodable.swift */,
+				5BECC230250AAB8D00E25A25 /* Decodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,6 +340,7 @@
 		5B14FE9F25090D68005BFD73 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5B191B7B250A8792009694D7 /* Storage */,
 				5B14FEA025090DBB005BFD73 /* Network */,
 			);
 			path = Services;
@@ -353,6 +379,26 @@
 				5B14FEAA25090ED5005BFD73 /* TranslateResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		5B191B7B250A8792009694D7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5B191B7C250A87A3009694D7 /* HistoryStorageService.swift */,
+				5BECC232250AAD6A00E25A25 /* TranslateSaver.swift */,
+				5BECC234250AADA500E25A25 /* TranslateHistoryReciever.swift */,
+				5BECC236250AB1DC00E25A25 /* TranslateHistoryRemover.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5B5B6DD8250AB79300FFA9D6 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				5B5B6DD9250AB7A200FFA9D6 /* NotificationService.swift */,
+				5B5B6DDB250AB7C000FFA9D6 /* NotificationList.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		5B7E8918250A0ED9005BB2CE /* ViewController */ = {
@@ -428,6 +474,7 @@
 			children = (
 				5B7E88FE25092F70005BB2CE /* LoadingView.swift */,
 				5BC1CCD6250A20D00034A615 /* NavigationBar.swift */,
+				5B5B6DDF250AD14E00FFA9D6 /* BarButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -452,7 +499,9 @@
 			children = (
 				5BC8B7E3250A6810004181FB /* StorageService.swift */,
 				5BC8B7E5250A6825004181FB /* StorageReceiver.swift */,
+				5BECC22E250A9C2400E25A25 /* StorageEntity.swift */,
 				5BC8B7E7250A6871004181FB /* StorageSetter.swift */,
+				5B5B6DD6250AB44D00FFA9D6 /* StorageRemover.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -606,11 +655,14 @@
 				5B14FE8825090B9A005BFD73 /* SearchInteractorInput.swift in Sources */,
 				5B14FE9525090C09005BFD73 /* BaseRouter.swift in Sources */,
 				5B7E8910250A0E71005BB2CE /* LanguageSelectorRouting.swift in Sources */,
+				5B191B7D250A87A3009694D7 /* HistoryStorageService.swift in Sources */,
 				5B14FE8725090B9A005BFD73 /* SearchRouter.swift in Sources */,
 				5B14FE9725090C3F005BFD73 /* BaseRouting.swift in Sources */,
+				5BECC233250AAD6A00E25A25 /* TranslateSaver.swift in Sources */,
 				5B14FE8B25090B9A005BFD73 /* SearchInteractor.swift in Sources */,
 				5B7E890125093108005BB2CE /* BaseViewController.swift in Sources */,
 				5B14FEA925090E2A005BFD73 /* TranslateRequest.swift in Sources */,
+				5BECC237250AB1DC00E25A25 /* TranslateHistoryRemover.swift in Sources */,
 				5BC8B7E8250A6871004181FB /* StorageSetter.swift in Sources */,
 				5B7E8916250A0E71005BB2CE /* LanguageSelectorPresenterOutput.swift in Sources */,
 				5B14FE6E2508EFC0005BFD73 /* BaseRequest.swift in Sources */,
@@ -621,7 +673,9 @@
 				5BC8B80F250A6D53004181FB /* HistoryTableViewCell.swift in Sources */,
 				5B14FE8625090B9A005BFD73 /* SearchRouting.swift in Sources */,
 				5BC8B7F7250A68B9004181FB /* HistoryRouting.swift in Sources */,
+				5BECC22D250A9A9600E25A25 /* Encodable.swift in Sources */,
 				5B14FE5B2508EEFF005BFD73 /* STest.xcdatamodeld in Sources */,
+				5BECC231250AAB8D00E25A25 /* Decodable.swift in Sources */,
 				5BC1CCDB250A586C0034A615 /* MainTabBarController.swift in Sources */,
 				5B14FE8525090B9A005BFD73 /* SearchPresenter.swift in Sources */,
 				5B7E88FF25092F70005BB2CE /* LoadingView.swift in Sources */,
@@ -630,32 +684,38 @@
 				5B7E8922250A1213005BB2CE /* LanguageTableHandling.swift in Sources */,
 				5B14FE8A25090B9A005BFD73 /* SearchPresenterInput.swift in Sources */,
 				5B14FE742508FF03005BFD73 /* AppRouter.swift in Sources */,
+				5B5B6DDC250AB7C000FFA9D6 /* NotificationList.swift in Sources */,
 				5BC8B7F4250A68B9004181FB /* HistoryAssembler.swift in Sources */,
 				5BC8B7FB250A68B9004181FB /* HistoryPresenterInput.swift in Sources */,
+				5BECC235250AADA500E25A25 /* TranslateHistoryReciever.swift in Sources */,
 				5B14FE8C25090B9A005BFD73 /* SearchPresenterOutput.swift in Sources */,
 				5B14FEA525090DEC005BFD73 /* TranslateService.swift in Sources */,
 				5B7E890D250A0E71005BB2CE /* LanguageSelectorAssembler.swift in Sources */,
 				5B14FE512508EEFF005BFD73 /* AppDelegate.swift in Sources */,
 				5B14FEA725090DF7005BFD73 /* TranslateServiceProtocol.swift in Sources */,
 				5B14FE9E25090CCA005BFD73 /* BasePresenting.swift in Sources */,
+				5B5B6DE0250AD14E00FFA9D6 /* BarButton.swift in Sources */,
 				5BC1CCD9250A560F0034A615 /* BaseNavigationController.swift in Sources */,
 				5BC8B7FC250A68B9004181FB /* HistoryInteractor.swift in Sources */,
 				5BC8B807250A6949004181FB /* HistoryItemModel.swift in Sources */,
 				5B14FE8925090B9A005BFD73 /* SearchViewController.swift in Sources */,
 				5B7E8914250A0E71005BB2CE /* LanguageSelectorPresenterInput.swift in Sources */,
 				5BC8B809250A6980004181FB /* HistoryTableHandler.swift in Sources */,
+				5BECC22F250A9C2400E25A25 /* StorageEntity.swift in Sources */,
 				5BC8B7E6250A6825004181FB /* StorageReceiver.swift in Sources */,
 				5B14FE8425090B9A005BFD73 /* SearchInteractorOutput.swift in Sources */,
 				5B14FE8325090B9A005BFD73 /* SearchAssembler.swift in Sources */,
 				5B14FE6C2508EF80005BFD73 /* NetworkAPI.swift in Sources */,
 				5B14FE702508F05F005BFD73 /* NetworkError.swift in Sources */,
 				5BC8B7F9250A68B9004181FB /* HistoryInteractorInput.swift in Sources */,
+				5B5B6DD7250AB44D00FFA9D6 /* StorageRemover.swift in Sources */,
 				5BC8B7F8250A68B9004181FB /* HistoryRouter.swift in Sources */,
 				5BC8B7F5250A68B9004181FB /* HistoryInteractorOutput.swift in Sources */,
 				5BC8B7FA250A68B9004181FB /* HistoryViewController.swift in Sources */,
 				5B7E8912250A0E71005BB2CE /* LanguageSelectorInteractorInput.swift in Sources */,
 				5B7E8911250A0E71005BB2CE /* LanguageSelectorRouter.swift in Sources */,
 				5BC8B7E4250A6810004181FB /* StorageService.swift in Sources */,
+				5B5B6DDA250AB7A200FFA9D6 /* NotificationService.swift in Sources */,
 				5BC8B7F6250A68B9004181FB /* HistoryPresenter.swift in Sources */,
 				5BC1CCD7250A20D00034A615 /* NavigationBar.swift in Sources */,
 				5B14FEAB25090ED5005BFD73 /* TranslateResponse.swift in Sources */,

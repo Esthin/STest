@@ -13,4 +13,5 @@ protocol SearchInteractorInput: class {
     func setSourceLanguage(_ language: Language)
     func setTargetLanguage(_ language: Language)
     func fetchTranslate(for word: String)
+    func saveTranslate(source: String, result: String)
 }

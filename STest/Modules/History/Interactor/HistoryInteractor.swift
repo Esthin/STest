@@ -10,14 +10,28 @@ import Foundation
 
 final class HistoryInteractor {
     private weak var output: HistoryInteractorOutput?
-    private let storageService: StorageReceiver
+    private let storageService: TranslateHistoryReciever & TranslateHistoryRemover
     
-    init(_ storageService: StorageReceiver = StorageService()) {
+    init(_ storageService: TranslateHistoryReciever & TranslateHistoryRemover = HistoryStorageService()) {
         self.storageService = storageService
     }
 }
 
 extension HistoryInteractor: HistoryInteractorInput {
+    
+    func postTranslateNotification(data: HistoryItemModel?) {
+        NotificationService.postNotification(.updateTranslateScreen, info: try? data.asDictionary())
+    }
+    
+    func clearHeastory() {
+        storageService.deleteAll()
+        getTranslateHistory()
+    }
+    
+    func getTranslateHistory() {
+        output?.didReceiveHistory(data: storageService.fetchTranslateHistory())
+    }
+    
     func attach(_ model: HistoryInteractorOutput) {
         output = model
     }
