@@ -13,4 +13,5 @@ protocol HistoryInteractorInput: class {
     func getTranslateHistory()
     func clearHeastory()
     func postTranslateNotification(data: HistoryItemModel?)
+    func filterElemets(with string: String?)
 }

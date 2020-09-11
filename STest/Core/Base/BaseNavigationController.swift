@@ -28,6 +28,7 @@ class BaseNavigationController: UINavigationController {
     private func commonInit() {
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = .yellow
+        navigationBar.backgroundColor = .yellow
         navigationBar.shadowImage = UIImage()
     }
 }

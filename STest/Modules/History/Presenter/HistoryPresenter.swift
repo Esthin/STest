@@ -23,6 +23,7 @@ final class HistoryPresenter {
         interactor.attach(self)
         view.setupNavBar()
         view.setupTableView()
+        view.setupSearchController()
         view.setupTableActions {[weak self] data in
             self?.interactor.postTranslateNotification(data: data)
             self?.router.presentTranslate()
@@ -36,6 +37,10 @@ final class HistoryPresenter {
 }
 
 extension HistoryPresenter: HistoryPresenterInput {
+    func didSearchText(_ string: String?) {
+        interactor.filterElemets(with: string)
+    }
+    
     func didTapDeleteHistory() {
         interactor.postTranslateNotification(data: nil)
         interactor.clearHeastory()
@@ -44,6 +49,10 @@ extension HistoryPresenter: HistoryPresenterInput {
 }
 
 extension HistoryPresenter: HistoryInteractorOutput {
+    func didReceiveClearEvent() {
+        interactor.getTranslateHistory()
+    }
+    
     func didReceiveHistory(data: [HistoryItemModel]) {
         view.setHistoryData(data)
     }

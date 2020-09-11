@@ -10,4 +10,5 @@ import Foundation
 
 protocol HistoryPresenterInput: BasePresenting {
     func didTapDeleteHistory()
+    func didSearchText(_ string: String?)
 }

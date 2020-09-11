@@ -40,7 +40,6 @@ extension SearchViewController: SearchPresenterOutput {
         view.backgroundColor = .yellow
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
-//        navigationController?.navigationBar.addGestureRecognizer(tap)
     }
     
     func setSourceLanguageTitle(_ title: String) {

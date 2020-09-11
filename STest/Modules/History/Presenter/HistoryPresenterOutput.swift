@@ -12,5 +12,6 @@ protocol HistoryPresenterOutput: class {
     func setupTableView()
     func setupTableActions(select: @escaping (HistoryItemModel) -> Void)
     func setHistoryData(_ data: [HistoryItemModel])
+    func setupSearchController()
     func setupNavBar()
 }

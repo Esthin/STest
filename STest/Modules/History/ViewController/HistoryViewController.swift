@@ -19,6 +19,11 @@ final class HistoryViewController: BaseViewController {
         view = tableView
     }
     
+    private let serachController: UISearchController = {
+        let serachController = UISearchController()
+        return serachController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
@@ -35,11 +40,19 @@ final class HistoryViewController: BaseViewController {
 }
 
 extension HistoryViewController: HistoryPresenterOutput {
+
+    func setupSearchController() {
+        navigationItem.searchController = serachController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        serachController.obscuresBackgroundDuringPresentation  = false
+        serachController.searchBar.backgroundColor = .yellow
+        serachController.searchBar.delegate = self
+    }
+    
     func setupNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(didTapRemoveAll))
         navigationItem.leftBarButtonItem?.tintColor = .black
     }
-    
     
     func setupTableView() {
         tableHandler.attach(tableView)
@@ -53,4 +66,14 @@ extension HistoryViewController: HistoryPresenterOutput {
         tableHandler.setItems(data)
     }
     
+}
+
+extension HistoryViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter.didSearchText(searchBar.text)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        presenter.didSearchText(nil)
+    }
 }
